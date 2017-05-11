@@ -1,0 +1,43 @@
+/* Accordion */
+.content{
+	display: none;
+}
+
+.title{
+	cursor: pointer;
+}
+
+.title.active + .content{
+	display: block;
+} 
+
+/* Modal window */
+body{
+	position: relative;
+}
+
+#modal-window{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 100;
+	width: auto;
+	background: #fff;
+	border: 1px solid #000;
+	transform: translate(-50%, -50%);
+}
+
+#modal-window.active{
+	display: block;
+}
+
+.modal-bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background: rgba(0,0,0, 0.5);
+}
